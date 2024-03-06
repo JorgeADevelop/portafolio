@@ -1,0 +1,95 @@
+---
+import Subtitle  from "./Subtitle.astro"
+
+import languajes from '../utils/languajes.json';
+import frameworks from '../utils/frameworks.json';
+import others from '../utils/others.json';
+---
+
+<section id="about">
+    <Subtitle title='about_me("JorgeAndew")' />
+    <p class="font-light mt-5 text-xl">Est sunt minim ipsum aliquip aliquip. Ullamco tempor velit dolor sunt nisi proident amet ex cupidatat dolor. Cupidatat nostrud tempor quis sint esse. Excepteur ullamco anim exercitation non minim enim. Ullamco et officia officia labore labore nulla pariatur voluptate sit anim reprehenderit sint aliquip. Qui adipisicing nisi ea ex dolore eiusmod et in exercitation. Aliquip quis adipisicing nostrud proident fugiat incididunt aliqua.</p>
+    <div class="mt-5">
+        <div>
+            <strong class="font-bold text-3xl select-none">hard_skills</strong>
+            <div class="pt-10">
+                <div id="languajes">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            {languajes.map((item) => (
+                                <li class="h-24 glide__slide skill_item group">
+                                    <div class="bg-gray-400 py-4 flex justify-center items-center w-full h-full rounded-full relative">
+                                        <img src={item.src} alt={item.title} class="w-16 h-16 group-hover:opacity-10" />
+                                        <p class="absolute text-black font-bold opacity-0 group-hover:opacity-100">{item.title}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div id="frameworks" class="my-5">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            {frameworks.map((item) => (
+                                <li class="h-24 glide__slide skill_item group">
+                                    <div class="bg-gray-400 py-4 flex justify-center items-center w-full h-full rounded-full relative">
+                                        <img src={item.src} alt={item.title} class="w-16 h-16 group-hover:opacity-10" />
+                                        <p class="absolute text-black font-bold opacity-0 group-hover:opacity-100">{item.title}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div id="tools">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            {others.map((item) => (
+                               <li class="h-24 glide__slide skill_item group">
+                                    <div class="bg-gray-400 py-4 flex justify-center items-center w-full h-full rounded-full relative">
+                                        <img src={item.src} alt={item.title} class="w-16 h-16 group-hover:opacity-10" />
+                                        <p class="absolute text-black font-bold opacity-0 group-hover:opacity-100">{item.title}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    import Glide from '@glidejs/glide';
+    import '@glidejs/glide/dist/css/glide.core.min.css';
+    import '@glidejs/glide/dist/css/glide.theme.min.css';
+    
+    var glideLanguajes = new Glide('#languajes', {
+        type: 'carousel',
+        perView: 7,
+        focusAt: 'center',
+        startAt: 1,
+        autoplay: 1500,
+        }
+    )
+    var glideFrameworks = new Glide('#frameworks', {
+        type: 'carousel',
+        perView: 7,
+        focusAt: 'center',
+        autoplay: 1500,
+        direction: 'rtl',
+        }
+    )
+    var glideTools = new Glide('#tools', {
+        type: 'carousel',
+        perView: 7,
+        focusAt: 'center',
+        autoplay: 1500,
+        }
+    )
+
+    glideLanguajes.mount()
+    glideFrameworks.mount()
+    glideTools.mount()
+</script>

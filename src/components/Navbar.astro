@@ -1,0 +1,36 @@
+---
+
+---
+
+<nav class="flex justify-center py-5 px-10 w-full fixed top-0 z-50 bg-[#201E22]">
+    <div class="flex justify-between items-center w-full max-w-screen-lg select-none">
+        <div class="font-semibold text-3xl">
+            <h1>
+                <span class="text-[#C972FF]">&lt;</span>
+                JorgeDevelop
+                <span class="text-[#C972FF]">/&gt;</span>
+            </h1>
+        </div>
+        <div>
+            <ul class="flex text-2xl">
+                <li class="hover:text-[#C972FF] mr-5"><a href="#home">.home()</a></li>
+                <li class="hover:text-[#C972FF] mr-5"><a href="#about">.about_me()</a></li>
+                <li class="hover:text-[#C972FF] mr-5"><a href="#projects">.portafolio()</a></li>
+                <li class="hover:text-[#C972FF]"><a href="#contact">.email()</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    nav::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px; /* Ajusta esto para cambiar la altura del desvanecimiento */
+        background: linear-gradient(to top, rgba(56, 56, 56, 0.404), transparent);
+    }
+</style>

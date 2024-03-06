@@ -1,0 +1,35 @@
+---
+import Subtitle from "./Subtitle.astro";
+
+
+---
+
+<section id="contact">
+    <Subtitle title=".email()" />
+    <div class="my-5">
+        <div class="flex mb-5">
+            <img width="30px" height="30px" src="/icons/github.png" alt="">
+            <a class="text-2xl ml-5" href="https://github.com/JorgeADevelop" target="_blank" rel="noopener noreferrer">
+                @JorgeADevelop
+            </a>
+        </div>
+        <div class="flex mb-5">
+            <img width="30px"  height="30px"src="/icons/linkedin.png" alt="">
+            <a class="text-2xl ml-5" href="https://www.linkedin.com/in/jorge-andrew-2aa6b7156/" target="_blank" rel="noopener noreferrer">
+                @JorgeDevelop
+            </a>
+        </div>
+        <div class="flex mb-5">
+            <img width="30px"  height="30px"src="/icons/instagram.png" alt="">
+            <a class="text-2xl ml-5" href="https://www.instagram.com/jorge_develop/" target="_blank" rel="noopener noreferrer">
+                @JorgeAndrew
+            </a>
+        </div>
+    </div>
+    <form method="post" class="text-black m-8 flex justify-center flex-col">
+        <textarea placeholder="escribe un mensaje..." class="w-full mb-4 p-5 caret-[#C972FF]" name="message" id="message" rows="10"></textarea>
+        <button class="bg-white px-6 py-1 text-1xl rounded-md shadow-xl transition duration-300 ease-in-out hover:bg-[#C972FF] hover:text-white">
+            Enviar
+        </button>
+    </form>
+</section>

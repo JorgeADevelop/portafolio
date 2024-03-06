@@ -1,0 +1,54 @@
+[
+    {
+        "title" : "golang",
+        "src" : "/icons/languajes/golang.svg"
+    },
+    {
+        "title" : "php",
+        "src" : "/icons/languajes/php.svg"
+    },
+    {
+        "title" : "python",
+        "src" : "/icons/languajes/python.svg"
+    },
+    {
+        "title" : "javascript",
+        "src" : "/icons/languajes/javascript.svg"
+    },
+    {
+        "title" : "typescript",
+        "src" : "/icons/languajes/typescript.svg"
+    },
+    {
+        "title" : "dart",
+        "src" : "/icons/languajes/dart.svg"
+    },
+    {
+        "title" : "html",
+        "src" : "/icons/languajes/html.svg"
+    },
+    {
+        "title" : "css",
+        "src" : "/icons/languajes/css.svg"
+    },
+    {
+        "title" : "graphql",
+        "src" : "/icons/languajes/graphql.svg"
+    },
+    {
+        "title" : "elasticsearch",
+        "src" : "/icons/databases/elasticsearch.svg"
+    },
+    {
+        "title" : "mongodb",
+        "src" : "/icons/databases/mongodb.svg"
+    },
+    {
+        "title" : "mysql",
+        "src" : "/icons/databases/mysql.svg"
+    },
+    {
+        "title" : "postgresql",
+        "src" : "/icons/databases/postgresql.svg"
+    }
+]

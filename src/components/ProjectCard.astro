@@ -1,0 +1,48 @@
+---
+interface Props {
+	title: string;
+    projectType: string;
+	description: string;
+    tags: string[];
+    href: string;
+    imageName: string;
+}
+
+const { title, projectType, description, tags, href, imageName } = Astro.props;
+
+---
+
+<div class="flex flex-row justify-between my-7">
+    <div class="basis-[60%]">
+        <h2 class="text-3xl pl-5">{title}</h2>
+        <p class="text-md mt-4">{description}</p>
+        <div class="w-full flex justify-center items-center flex-col">
+            <div class="flex flex-row my-3 flex-wrap">
+                {
+                    tags.map((tag) => (
+                        <p class="bg-[#C972FF] rounded-xl px-3 mx-1 my-2">{tag}</p>
+                    ))
+                }
+            </div>
+            <button class="bg-white px-6 py-1 text-1xl rounded-md shadow-xl transition duration-300 ease-in-out hover:bg-[#C972FF] hover:text-white">
+                <a class="text-black" href={href}>{`go to ${projectType}`}</a>
+            </button>
+        </div>
+    </div>
+    {projectType === 'app' ?
+        <div class="basis-[40%] flex justify-center items-center">
+            <div class="w-[60%] h-[80%] relative">
+                <img class="absolute object-fill top-1 left-7 rounded-2xl" style={`width: calc(100% - 54px); height: calc(100% - 15px)`} src={`images/projects/${imageName}`} alt={title} />
+                <img class="absolute w-full h-full" src='images/iphone_frame.png' />
+            </div>
+        </div>
+    :
+        <div class="basis-[40%] flex justify-center items-center">
+            <div class="w-[80%] h-[50%] relative">
+                <img class="absolute object-fill top-1 left-7" style={`width: calc(100% - 52px); height: calc(100% - 15px)`} src={`images/projects/${imageName}`} alt={title} />
+                <img class="absolute w-full h-full" src='images/mac_frame.png' />
+            </div>
+        </div>
+    }
+    <hr>
+</div>

@@ -1,0 +1,54 @@
+[
+    {
+        "title" : "react",
+        "src" : "/icons/frameworks/react.svg"
+    },
+    {
+        "title" : "angularjs",
+        "src" : "/icons/frameworks/angular.svg"
+    },
+    {
+        "title" : "vuejs",
+        "src" : "/icons/frameworks/vue.svg"
+    },
+    {
+        "title" : "flutter",
+        "src" : "/icons/frameworks/flutter.svg"
+    },
+    {
+        "title" : "laravel",
+        "src" : "/icons/frameworks/laravel.svg"
+    },
+    {
+        "title" : "astro",
+        "src" : "/icons/frameworks/astro.svg"
+    },
+    {
+        "title" : "express",
+        "src" : "/icons/frameworks/express.svg"
+    },
+    {
+        "title" : "echo",
+        "src" : "/icons/frameworks/echo.svg"
+    },
+    {
+        "title" : "fastapi",
+        "src" : "/icons/frameworks/fastapi.svg"
+    },
+    {
+        "title" : "flask",
+        "src" : "/icons/frameworks/flask.svg"
+    },
+    {
+        "title" : "gingonic",
+        "src" : "/icons/frameworks/gingonic.svg"
+    },
+    {
+        "title" : "sass",
+        "src" : "/icons/frameworks/sass.svg"
+    },
+    {
+        "title" : "tailwind",
+        "src" : "/icons/frameworks/tailwind.svg"
+    }
+]

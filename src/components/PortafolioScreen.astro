@@ -1,0 +1,34 @@
+---
+import Subtitle from "./Subtitle.astro";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section id="projects">
+    <Subtitle title=".portafolio()" />
+    <div class="mt-5">
+        <ProjectCard 
+            title="Gift Exchange"
+            projectType="app"
+            description="Ut ullamco aliquip fugiat quis elit officia anim irure cupidatat ipsum laborum cupidatat ut dolore. Mollit occaecat occaecat do ut tempor nulla exercitation id id enim sunt esse consectetur ad. Eu deserunt magna elit eu commodo nisi labore est deserunt."
+            tags={["go", "mysql",  "docker", "serverless", "aws_rds", "aws_lambda", "flutter", "dart", "github_actions", "kafka"]}
+            imageName="gift_exchange.PNG"
+            href="https://github.com/JorgeADevelop"
+        />
+        <ProjectCard 
+            title="NeoRide"
+            projectType="web"
+            description="Ut ullamco aliquip fugiat quis elit officia anim irure cupidatat ipsum laborum cupidatat ut dolore. Mollit occaecat occaecat do ut tempor nulla exercitation id id enim sunt esse consectetur ad. Eu deserunt magna elit eu commodo nisi labore est deserunt."
+            tags={["go", "mysql", "elasticsearch", "docker", "kubernetes", "gin", "git", "jenkins", "aws_s3"]}
+            imageName="neoride.PNG"
+            href="https://neoride.com/"
+        />
+        <ProjectCard 
+            title="Sund & Bælt"
+            projectType="web"
+            description="Ut ullamco aliquip fugiat quis elit officia anim irure cupidatat ipsum laborum cupidatat ut dolore. Mollit occaecat occaecat do ut tempor nulla exercitation id id enim sunt esse consectetur ad. Eu deserunt magna elit eu commodo nisi labore est deserunt."
+            tags={["go", "mysql", "mongodb", "docker", "kubernetes", "gin", "git", "jenkins", "aws_s3", "google_maps_platform"]}
+            imageName="sund_and_belt.PNG"
+            href="https://sundogbaelt.dk/en/"
+        />
+    </div>
+</section>

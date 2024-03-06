@@ -1,0 +1,54 @@
+[
+    {
+        "title" : "docker",
+        "src" : "/icons/others/docker.svg"
+    },
+    {
+        "title" : "git",
+        "src" : "/icons/others/git.svg"
+    },
+    {
+        "title" : "kubernetes",
+        "src" : "/icons/others/kubernetes.svg"
+    },
+    {
+        "title" : "redis",
+        "src" : "/icons/others/redis.svg"
+    },
+    {
+        "title" : "rabbitmq",
+        "src" : "/icons/others/rabbitmq.svg"
+    },
+    {
+        "title" : "jenkins",
+        "src" : "/icons/others/jenkins.svg"
+    },
+    {
+        "title" : "terraform",
+        "src" : "/icons/others/terraform.svg"
+    },
+    {
+        "title" : "AWS ec2",
+        "src" : "/icons/others/aws-ec2.svg"
+    },
+    {
+        "title" : "AWS s3",
+        "src" : "/icons/others/aws-s3.svg"
+    },
+    {
+        "title" : "AWS rds",
+        "src" : "/icons/others/aws-rds.svg"
+    },
+    {
+        "title" : "AWS lambda",
+        "src" : "/icons/others/aws-lambda.svg"
+    },
+    {
+        "title" : "github actions",
+        "src" : "/icons/others/github-actions.svg"
+    },
+    {
+        "title" : "kafka",
+        "src" : "/icons/others/kafka.svg"
+    }
+]
